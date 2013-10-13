@@ -1,0 +1,46 @@
+<html >
+	<head>
+		<title> Controle de Financas </title>
+	</head>
+	<body >
+		<form method ="get" name ="fmes" action ="excluirReceitasDespesas.php">
+			<center>
+				<img src="money2.jpg" width ="15%"/>
+				<h1> Sistema de Controle de Financas Empresarial </h1>
+				<hr width ="700 px"/><br/>
+				<p>Selecione se deseja excluir uma despesa ou receita:
+				<select name = "tipo">
+					<option value ="2"> Despesa </option>
+					<option value ="1"> Receita </option>
+				</select>
+				<br>
+				<p>Selecione o tipo de despesa/receita que deseja excluir (Fixa ou Variavel):
+				<select name = "classe">
+					<option value ="2"> Fixa </option>
+					<option value ="1"> Variavel </option>
+				</select>
+				<p>Favor, escolha o mes da despesa/receita que deseja excluir :
+				<select name ="mes">
+					<option value ="1" > Janeiro </option>
+					<option value ="2" > Fevereiro </option>
+					<option value ="3"> Marco </option>
+					<option value ="4" > Abril </option>
+					<option value ="5" > Maio </option>
+					<option value ="6" > Junho </option>
+					<option value ="7"> Julho </option>
+					<option value ="8"> Agosto </option>
+					<option value ="9" > Setembro </option>
+					<option value ="10" > Outubro </option>
+					<option value ="11" > Novembro </option>
+					<option value ="12" > Dezembro </option>
+				</select>
+				</p>
+				<br>
+					Nome da receita ou despesa: <input type = text, name = "nome"> 
+					<br><br>
+					<input type ="submit" value ="Excluir">
+					<input type ="button" onClick ="location.href = 'principal.php' " value = 'Voltar'>
+			</center>
+		</form>
+	</body>
+ </html>
